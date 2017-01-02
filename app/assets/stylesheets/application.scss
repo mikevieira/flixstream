@@ -1,6 +1,24 @@
 @import "bootstrap-sprockets";
 @import "bootstrap"; 
 
+
+.navbar {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  boarder-radius: 0; 
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-default a.navbar-brand {
+   color: red;
+   font-family: "Helvetica Neue", Helvetica;
+   font-weight: 100;
+}
+
+body {
+  background:url('asanoha-400px.png')
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
