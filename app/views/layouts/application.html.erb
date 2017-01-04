@@ -8,6 +8,40 @@
 </head>
 <body>
 
+<!---Navbar-->
+<div id ="wrap">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Flixstream</a>
+    </div>
+ <!--Links-->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Something! <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Somethingelse</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      
+      <% if user_signed_in? %>
+        <li><%=link_to 'Log Out', destroy_user_session_path, method: :delete  %>></li>
+      <% else %>
+        <li><%= link_to 'Sign In',new_user_session_path %></li>
+        <li><%=link_to 'Sign Up',new_user_registration_path %></li>
+      <% end %>
+
+      </ul>
+      </div>
+
+  </nav>
+
 <%if notice.present? %>
 <p class="alert alert-info"><%= notice %></p>
 <% end %>
@@ -16,6 +50,25 @@
 <p class="alert alert-danger"><%= alert %></p>
 <% end %> 
 <%= yield %>
+
+<div class = "clr"></div>
+<br/>
+<div class= "push"></div>
+
+  </div> <!--wrap-->
+
+  <br class= "clr"/>
+  
+  <nav class = "footer navbar-fixed-bottom">
+  
+      <div class="col-xs-4 clear pull-right">
+       <b>Teachers</b>
+       <%= link_to  "Teach a Course", new_instructor_course_path %>
+      </div>
+      <div class= "col-xs-4 clear pull-right">
+        <a class = "white", href = "http://mikevieira.getforge.io/"> Made by Mike! </a>
+      </div>
+</nav>
 
 </body>
 </html>
