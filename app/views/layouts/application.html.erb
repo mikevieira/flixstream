@@ -20,13 +20,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Flixstream</a>
+      <%= link_to "Flixstream", root_path, class: 'navbar-brand'%>
     </div>
  <!--Links-->
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#">Something! <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Somethingelse</a></li>
+        <li><%= link_to "See All Courses", courses_path%></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       
