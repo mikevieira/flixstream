@@ -95,6 +95,17 @@ $footer-height: 60px;
   font-weight: 100;
 }
 
+/*validation error styles*/ 
+
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+  margin: 10px;
+}
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
