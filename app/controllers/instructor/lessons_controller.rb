@@ -25,11 +25,12 @@ def require_authorized_for_current_section
     end 
   end  
 
-  ef require_authorized_for_current_lesson
-  if current_lesson_section.course.user != current_user
+  def require_authorized_for_current_lesson
+  if current_lesson.section.course.user != current_user
        return render text: "Unauthorized", status: :unauthorized
     end 
   end 
+
 
 def current_lesson
   @current_lesson ||= Lesson.find(params[:id])
