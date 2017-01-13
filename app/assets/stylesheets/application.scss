@@ -79,10 +79,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 /*Footer styles*/ 
 
-$footer-height: 60px;
+$footer-height: 40px;
 
 .footer {
-  padding-top: 20px;
+  padding-top: 10px;
   height:$footer-height;
   color:white;
   background-color: rgba(36,32,33,0.9);
@@ -178,8 +178,8 @@ ul .header .glyphicon {
   margin: 10px; 
 }
 
-.picture {
-  marigin:50px;
+.bottom{
+  marigin-bottom:70px;
 }
 
 /*
