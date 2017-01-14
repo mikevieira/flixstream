@@ -28,7 +28,7 @@
  <!--Links-->
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Something! <span class="sr-only">(current)</span></a></li>
+        <li><%= link_to  "Teach a Course", new_instructor_course_path %><span class="sr-only">(current)</span></a></li>
         <li><%= link_to "See All Courses", courses_path%></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -62,17 +62,36 @@
   </div> <!--wrap-->
 
   <br class= "clr"/>
+
+<footer>
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <div class="navbar-collapse collapse" id="footer-body">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://mikevieira.getforge.io/">Made By Mike</a></li>
+                    <li><%= link_to  "Teach a Course", new_instructor_course_path %></li>
+                    <li><%= image_tag 'facebook.png', class: 'social-button' %></li>
+                    <li><%= image_tag 'twitter.png', class: 'social-button' %></li>
+                    <li><%= image_tag 'linkedin.png', class: 'social-button' %> </li>
+                </ul>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="footer-bar-btns visible-xs">
+                    <li><a href="#" class="btn" title="History"><i class="fa fa-2x fa-clock-o blue-text"></i></a></li>
+                    <li><a href="#" class="btn" title="Favourites"><i class="fa fa-2x fa-star yellow-text"></i></a></li>
+                    <li><a href="#" class="btn" title="Subscriptions"><i class="fa fa-2x fa-rss-square orange-text"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
   
-  <nav class = "footer navbar-fixed-bottom">
-  
-      <div class="col-xs-4 clear pull-right">
-       <b>Teachers</b>
-       <%= link_to  "Teach a Course", new_instructor_course_path %>
-      </div>
-      <div class= "col-xs-4 clear pull-right">
-        <a class = "white", href = "http://mikevieira.getforge.io/"> Made by Mike! </a>
-      </div>
-</nav>
 
 </body>
 </html>

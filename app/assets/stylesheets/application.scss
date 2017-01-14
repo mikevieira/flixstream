@@ -22,7 +22,7 @@ body {
 }
 
 .hero {
-  background: url('snow.jpg') no-repeat center center fixed; 
+  background: url('ski.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 /*Footer styles*/ 
 
-$footer-height: 40px;
+$footer-height: 50px;
 
 .footer {
   padding-top: 10px;
@@ -88,13 +88,24 @@ $footer-height: 40px;
   background-color: rgba(36,32,33,0.9);
   font-family: "Helvetica Neue",Helvetica;
   margin-top:30px;
-
+  font-weight:100;
 }
 
 .footer a{
   color:white;
   font-weight: 100;
 }
+
+.social-button {
+  width: 32px;
+  margin: 4px;
+}
+
+.social a:hover {
+  text-decoration:none;
+}
+
+
 
 /*validation error styles*/ 
 

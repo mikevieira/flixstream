@@ -11,6 +11,8 @@ class User < ActiveRecord::Base
  def enrolled_in?(course)
       return enrolled_courses.include?(course)
   end
+
+  
 end
 
 
